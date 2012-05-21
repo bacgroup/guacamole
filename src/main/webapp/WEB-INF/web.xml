@@ -72,4 +72,15 @@
         <url-pattern>/tunnel</url-pattern>
     </servlet-mapping>
 
+   <!-- OVD Login Servlet -->                                                                         
+    <servlet>                                                                                         
+        <description>OVD Login servlet.</description>                                                 
+        <servlet-name>OVDLogin</servlet-name>                                                         
+        <servlet-class>net.sourceforge.guacamole.net.auth.ovd.OVDLogin</servlet-class>                
+    </servlet>                                                                                        
+    <servlet-mapping>                                                                                 
+        <servlet-name>OVDLogin</servlet-name>                                                         
+        <url-pattern>/ovdlogin</url-pattern>                                                          
+    </servlet-mapping>    
+
 </web-app>
