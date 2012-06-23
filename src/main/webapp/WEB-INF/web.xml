@@ -83,4 +83,15 @@
         <url-pattern>/ovdlogin</url-pattern>                                                          
     </servlet-mapping>    
 
+   <!-- OVD PDF Printing Servlet -->
+    <servlet>                                                                                         
+        <description>Ulteo PDF printer</description>                                                 
+        <servlet-name>GuacamolePrinterServlet</servlet-name>                                                         
+        <servlet-class>net.sourceforge.guacamole.printing.GuacamolePrinterServlet</servlet-class>                
+    </servlet>                                                                                        
+    <servlet-mapping>                                                                                 
+        <servlet-name>GuacamolePrinterServlet</servlet-name>                                                         
+        <url-pattern>/printer/*</url-pattern>                                                          
+    </servlet-mapping>    
+
 </web-app>
